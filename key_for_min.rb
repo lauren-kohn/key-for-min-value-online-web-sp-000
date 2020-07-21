@@ -22,7 +22,7 @@ def key_for_min_value(hash)
   
   smallest_value = 0
   new_hash = nil
-  lowest = hash.delete_if do |name, value|
+  hash.delete_if do |name, value|
     if smallest_value == value || value < smallest_value
       value = smallest_value
     end

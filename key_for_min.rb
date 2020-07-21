@@ -6,7 +6,7 @@ def key_for_min_value(hash)
   hash.each do |name, value|
   # set up an iteration
     if smallest_value == 0 || value < smallest_value
-    # conditional evaluates whether the value passed in is
+    # conditional evaluates whether the value passed in is less than the value it is being compared to
       smallest_value = value
       new_hash = name
     end

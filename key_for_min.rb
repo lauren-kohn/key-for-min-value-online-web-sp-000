@@ -20,5 +20,6 @@ def key_for_min_value(hash)
 #longest = %w{ cat sheep bear }.inject do |memo, word|
 #   memo.length > word.length ? memo : word
 
-  lowest = hash.delete_if do |
+  lowest = hash.delete_if do |name, value|
+    
 end

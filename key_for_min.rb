@@ -13,10 +13,10 @@ def key_for_min_value(hash)
 # key_for_min_value(less_than)
 #end
 
-  lowest = hash.inject do |first, second|
-    first < second ? first : second
-  end
-  lowest
+#  lowest = hash.inject do |first, second|
+#    first < second ? first : second
+#  end
+#  lowest
 #longest = %w{ cat sheep bear }.inject do |memo, word|
 #   memo.length > word.length ? memo : word
   
@@ -25,4 +25,5 @@ def key_for_min_value(hash)
   lowest = hash.delete_if do |name, value|
     if value < smallest_value
       new_hash = smallest_value
+    end
 end

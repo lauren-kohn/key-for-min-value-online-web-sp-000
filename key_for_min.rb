@@ -21,9 +21,9 @@ def key_for_min_value(hash)
 #   memo.length > word.length ? memo : word
   
   smallest_value = 0
-  hash.delete_if do |name, value|
-    if value > smallest_value
+  lowest = hash.delete_if do |name, value|
+    if value < smallest_value
     end
   end
-  hash
+  lowest
 end
